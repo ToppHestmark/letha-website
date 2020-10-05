@@ -1,1 +1,1 @@
-# letha-website
+# Letha
