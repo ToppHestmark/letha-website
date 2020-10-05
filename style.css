@@ -22,12 +22,12 @@ main {
   min-height: 100vh;
 }
 
+/* --- Navbar --- */
 nav {
   display: flex;
   height: 10vh;
   background: aliceblue;
 }
-
 .nav-logo {
   display: flex;
   flex: 0.5;
@@ -35,7 +35,6 @@ nav {
   margin-left: 5vw;
   color: #212121;
 }
-
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -45,37 +44,61 @@ nav {
   width: 50%;
   height: 100%;
 }
-
 .nav-links li a {
   padding: 7px;
   color: #212121;
   text-decoration: none;
   font-size: 16px;
 }
-
-a:hover, .target-link {
+.nav-links li a:hover, .target-link {
   border-bottom: 2px solid #212121;
 }
-
 .index__headerMobile {
   display: none;
 }
-
 .index__headerTitle {
+  margin: 20px;
   font-size: 40px;
   text-align: center;
   padding: 15px 15px;
   color: #212121;
 }
 
+/* --- Header images ---  */
+.index__headerDesktop {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+}
+
+.index__headerImages {
+  width: 30%;
+  max-width: 450px;
+  filter: grayscale(30%);
+}
+.index__headerImages img {
+  width: 100%;
+  height: auto;
+}
+.index__imageText {
+  font-size: 3vw;
+  margin-top: -60px;
+  margin-bottom: 20px;
+  color: aliceblue;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* --- Lower circeled menus --- */
 .index__lowerMenu {
   display: flex;
   justify-content: center;
   width: 100vw;
 }
-.index__categorys {
+/* .index__categorys {
   cursor: pointer;
-}
+} */
 .index__category:hover {
   -webkit-box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.75);
@@ -83,9 +106,9 @@ a:hover, .target-link {
   opacity: 0.8;
 }
 .index__category {
-  width: 100px;
-  margin: 15px;
-  padding: 15px;
+  width: 150px;
+  margin: 25px;
+  padding: 30px;
   border: 1px solid rgba(0, 0, 0, 0.9);
   border-radius: 50%;
 }
@@ -103,6 +126,7 @@ a:hover, .target-link {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-top: 100px;
 }
 
 
@@ -120,6 +144,7 @@ a:hover, .target-link {
 
 @media screen and (max-width: 768px) {
 
+  /* --- Navbar ---  */
   .line {
     width: 30px;
     height: 3px;
@@ -135,11 +160,9 @@ a:hover, .target-link {
     transform: translate(-5%, -50%);
     z-index: 2;
   }
-
   nav {
     position: relative;
   }
-
   .nav-links {
     position: fixed;
     background: aliceblue;
@@ -147,27 +170,23 @@ a:hover, .target-link {
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
+    clip-path: circle(50px at 90% -10%);
+    -webkit-clip-path: circle(50px at 90% -10%);
     transition: all 0.7s ease-out;
     pointer-events: none;
   }
-
   .nav-links.open {
     clip-path: circle(1150px at 90% -10%);
     -webkit-clip-path: circle(1150px at 90% -10%);
     pointer-events: all;
   }
-
   .nav-links li {
     opacity: 0;
   }
-
   .nav-links li a {
     font-size: 25px;
     color: #212121;
   }
-
   .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
   }
@@ -180,19 +199,22 @@ a:hover, .target-link {
   .nav-links li:nth-child(4) {
     transition: all 0.5s ease 0.5s;
   }
-  
   li.fade {
     opacity: 1;
   }
 
+  /* --- Header ---  */
   .index__header {
     max-height: 500px;
+  }
+  .index__headerDesktop {
+    display: none;
   }
 
   .index__headerMobile {
     display: flex;
     flex-direction: column;
-    filter: grayscale(40%);
+    filter: grayscale(30%);
   }
 
   .index__headerMobile img {
@@ -208,6 +230,11 @@ a:hover, .target-link {
     color: aliceblue;
     text-align: center;
     text-shadow: 1px 1px 1px #000;
+  }
+  .index__category {
+    width: 100px;
+    margin: 15px;
+    padding: 15px;
   }
 
   .main.remove {
