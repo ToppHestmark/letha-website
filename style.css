@@ -20,7 +20,7 @@ body {
 nav {
   display: flex;
   height: 10vh;
-  background: #212121;
+  background: aliceblue;
 }
 
 .nav-logo {
@@ -28,7 +28,7 @@ nav {
   flex: 0.5;
   align-items: center;
   margin-left: 5vw;
-  color: aliceblue;
+  color: #212121;
 }
 
 .nav-links {
@@ -42,7 +42,7 @@ nav {
 }
 
 .nav-links li a {
-  color: aliceblue;
+  color: #212121;
   text-decoration: none;
   font-size: 16px;
 }
@@ -55,6 +55,7 @@ nav {
   font-size: 40px;
   text-align: center;
   padding: 15px 15px;
+  color: #212121;
 }
 
 @keyframes transitionIn {
@@ -74,7 +75,7 @@ nav {
   .line {
     width: 30px;
     height: 3px;
-    background: white;
+    background: #212121;
     margin: 5px;
   }
 
@@ -93,7 +94,7 @@ nav {
 
   .nav-links {
     position: fixed;
-    background: #212121;
+    background: aliceblue;
     align-items: center;
     height: 100vh;
     width: 100%;
@@ -116,6 +117,7 @@ nav {
 
   .nav-links li a {
     font-size: 25px;
+    color: #212121;
   }
 
   .nav-links li:nth-child(1) {
