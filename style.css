@@ -17,6 +17,11 @@ body {
   height: 100%;
 }
 
+main {
+  position: relative;
+  min-height: 100vh;
+}
+
 nav {
   display: flex;
   height: 10vh;
@@ -42,9 +47,14 @@ nav {
 }
 
 .nav-links li a {
+  padding: 7px;
   color: #212121;
   text-decoration: none;
   font-size: 16px;
+}
+
+a:hover, .target-link {
+  border-bottom: 2px solid #212121;
 }
 
 .index__headerMobile {
@@ -57,6 +67,44 @@ nav {
   padding: 15px 15px;
   color: #212121;
 }
+
+.index__lowerMenu {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.index__categorys {
+  cursor: pointer;
+}
+.index__category:hover {
+  -webkit-box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.75);
+  opacity: 0.8;
+}
+.index__category {
+  width: 100px;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 50%;
+}
+.index__category img {
+  width: 100%;
+  height: auto;
+}
+
+.index__shoeCategory {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 
 @keyframes transitionIn {
   from {
