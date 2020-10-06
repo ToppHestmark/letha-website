@@ -1,6 +1,9 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll(".slide")
+const slides = document.querySelectorAll(".slide");
+const nextImage = document.querySelector(".next");
+const prevImage = document.querySelector(".prev")
 
+// --- Slider ---
+let currentSlide = 0;
 const init = (n) => {
   slides.forEach((slide, index) => {
     slide.style.display = "none"
@@ -19,7 +22,27 @@ const prev = () => {
   init(currentSlide)
 }
 
-document.querySelector(".next").addEventListener('click', next)
-document.querySelector(".prev").addEventListener('click', prev)
+nextImage.addEventListener('click', next)
+prevImage.addEventListener('click', prev)
 
 
+// --- Dropdown shoe size menu --- //
+const dropdown = document.querySelector("#dropdown");
+const dropdownContent = document.getElementsByClassName("dropdown-content");
+
+function dropDown() {
+  dropdown.classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.details__dropdownButton')) {
+    let dropdowns = dropdownContent;
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}

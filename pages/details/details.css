@@ -121,18 +121,76 @@
 }
 
 .details__addButton {
+  margin: 15px 0px 15px 0px;
   border: none;
   background-color: #DD5252;
   color: whitesmoke;
-  width: 50%;
+  width: 60%;
   height: 45px;
   font-size: large;
   cursor: pointer;
 }
 
+/* --- Dropdown shoe size menu ---  */
+.details__dropdownButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 40px;
+  background-color: white;
+  color: #212121;
+  padding: 16px;
+  font-size: large;
+  border: 1px solid #212121;
+  cursor: pointer;
+  outline: 0;
+}
+.details__dropdownIcon {
+  width: 30px;
+  height: auto;
+}
+
+.details__dropdownButton:focus {
+  background-color: white;
+}
+
+.details__dropdownContainer {
+  display: flex;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.details__dropdownContainer a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+  width: 60%;
+}
+
 
 @media screen and (max-width: 768px) {
 
+  /* --- Slider --- */
   .slide-container {
     width: 100%;
   }
@@ -152,5 +210,27 @@
   }
   .details__rightContainer {
     width: 100%;
+    margin-left: 0;
   }
+
+  /* --- Details container --- */
+  .details__rightContainer {
+    width: 100%;
+    justify-content: center;
+  }
+  .details__rightContainer h1, 
+  .details__price,
+  .details__colorContainer {
+    text-align: center;
+  }
+  .details__dropdownContainer {
+    display: flex !important;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+}
+  .details__addButton {
+    align-self: center;
+  }
+
 }
