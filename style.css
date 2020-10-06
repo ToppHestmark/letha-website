@@ -103,6 +103,10 @@ nav {
   box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.75);
   opacity: 0.8;
 }
+.index__categorys {
+  text-decoration: none;
+  color: #212121;
+}
 .index__category {
   width: 150px;
   margin: 25px;
