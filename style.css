@@ -34,7 +34,13 @@ nav {
   flex: 0.5;
   align-items: center;
   margin-left: 5vw;
+  margin-top: -2vh;
   color: #212121;
+  text-decoration: none;
+  font-family: pacifico, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
 }
 .nav-links {
   display: flex;
@@ -85,7 +91,7 @@ nav {
   margin-bottom: 20px;
   color: aliceblue;
   text-align: center;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 0px 1px #000;
 }
 
 /* --- Lower circeled menus --- */
@@ -231,7 +237,7 @@ nav {
     margin-bottom: 20px;
     color: aliceblue;
     text-align: center;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 0px 1px #000;
   }
 
   /* --- Three circles --- */
