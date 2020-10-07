@@ -4,6 +4,7 @@ const links = document.querySelectorAll('.nav-links li');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
 const navLogo = document.querySelector('.nav-logo');
+const shoppingBacIconMobile = document.querySelector('.shoppingBagIconMobile')
 
 
 hamburger.addEventListener('click', () => {
@@ -15,5 +16,6 @@ hamburger.addEventListener('click', () => {
   main.classList.toggle('remove');
   footer.classList.toggle('remove');
   navLogo.classList.toggle('remove');
+  shoppingBacIconMobile.classList.toggle('remove');
 });
 
