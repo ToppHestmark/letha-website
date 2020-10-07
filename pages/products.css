@@ -18,11 +18,15 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 5vh;
+  padding-bottom: 5vh;
   text-decoration: none;
   color: #212121;
 }
 .products__product:hover {
   opacity: 0.8;
+  -webkit-box-shadow: 0px 4px 9px -4px rgba(104,109,118,1);
+  -moz-box-shadow: 0px 4px 9px -4px rgba(104,109,118,1);
+  box-shadow: 0px 4px 9px -4px rgba(104,109,118,1);
 }
 .products__imageContainer {
   display: flex;
@@ -39,6 +43,7 @@
   align-self: center;
   text-align: center;
 }
+
 
 @media screen and (max-width: 768px) {
 
