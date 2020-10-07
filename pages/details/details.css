@@ -1,7 +1,8 @@
 .page__trackContainer {
   display: flex;
   padding-left: 5vw;
-  margin-bottom: 2vh;
+  /* margin-bottom: 2vh; */
+  margin: 15px 0 10px 0;
 }
 .page__forwardSlash {
   padding-left: 8px;
