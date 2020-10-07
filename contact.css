@@ -18,13 +18,6 @@ body {
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
-  color: #777;
-  background-image: url('./assets/pexels-wilson-vitorino-2177474-2.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  backdrop-filter: blur(4px);
 }
 
 .contact__formContainer {
@@ -114,10 +107,6 @@ fieldset {
 }
 :-ms-input-placeholder {
   color: #888;
-}
-
-.footer {
-  color: whitesmoke;
 }
 
 @media screen and (max-width: 768px) {
