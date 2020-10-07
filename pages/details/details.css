@@ -187,6 +187,13 @@
   width: 60%;
 }
 
+.details__textContainer {
+  margin-top: 20px;
+  padding-right: 7vw;
+}
+.details__textContainer h2 {
+  padding-bottom: 7px;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -231,6 +238,10 @@
 }
   .details__addButton {
     align-self: center;
+  }
+  .details__textContainer {
+    padding: 0px 15px 0px 15px;
+    max-width: 500px;
   }
 
 }
