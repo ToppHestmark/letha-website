@@ -1,0 +1,12 @@
+.gift__headerContainer {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gift__headerContainer h1 {
+  font-size: 60px;
+  text-align: center;
+}
