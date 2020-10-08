@@ -1,6 +1,8 @@
-nav {
-  margin-bottom: 4vh;
+main {
+  border-top: 1px solid #e6e6e8;
+  padding-top: 5vh;
 }
+
 .about__container {
   display: flex;
   justify-content: center;

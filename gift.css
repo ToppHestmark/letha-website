@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid #e6e6e8;
 }
 
 .gift__headerContainer h1 {
