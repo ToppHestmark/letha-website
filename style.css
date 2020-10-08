@@ -24,6 +24,7 @@ main {
 }
 .index__headerText {
   background-color: rgba(246, 85, 85, 0.96);
+  color: white;
   text-align: center;
   height: 20px;
 }
