@@ -30,7 +30,24 @@
   <main class="main">
     <div class="page__trackContainer">
       <p class="page__address">Boots</p>
+      <div class="products__dropdownContainer">
+        <a onclick="sortDropDown()" class="products__dropdownButton">
+            Sort by: Names A-Z 
+            <img class="products__dropdownIcon" src="../assets/dropdown-display-icon.png" alt="">
+        </a>
+        <div id="dropdown" class="products__dropdown-content">
+          <a href="#">Recommended</a>
+          <a href="#">Last arrivals</a>
+          <a href="#">Popularity</a>
+          <a href="#">Names A-Z</a>
+          <a href="#">Names Z-A</a>
+          <a href="#">9 1/2</a>
+          <a href="#">Highest price</a>
+          <a href="#">Lowest Price</a>
+        </div>
+      </div>
     </div>
+
     <section class="products__section">
       <a href="./details/bootDetails/camper.html" class="products__product">
         <div class="products__imageContainer">
@@ -98,6 +115,6 @@
     <p>©Letha Footwear Ltd</p>
   </footer>
   <script src="../app.js"></script>
-  <script src="products.js"></script>
+  <script src="./products.js"></script>
 </body>
 </html>

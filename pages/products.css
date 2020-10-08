@@ -1,18 +1,74 @@
 .page__trackContainer {
-  padding-left: 5vw;
+  padding: 0vw 5vw 0 5vw;
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  font-weight: 100;
 }
 .page__address {
   font-size: 20px;
   text-decoration: underline;
   margin: 15px 0 10px 0;
 }
+
+/* --- Dropdown SORT BY menu ---  */
+.products__dropdownButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background-color: white;
+  padding: 26px;
+  font-size: large;
+  cursor: pointer;
+}
+.products__dropdownIcon {
+  width: 30px;
+  height: auto;
+}
+
+.products__dropdownButton:focus {
+  background-color: white;
+}
+
+.products__dropdownContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.products__dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%;
+}
+
+.products__dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.products__dropdownContainer a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+ /* --- Products --- */
 .products__section {
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
 .products__product {
   width: 26vw;
   display: flex;

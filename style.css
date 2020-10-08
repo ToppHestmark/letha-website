@@ -22,6 +22,11 @@ main {
   position: relative;
   min-height: 100vh;
 }
+.index__headerText {
+  background-color: rgba(246, 85, 85, 0.96);
+  text-align: center;
+  height: 20px;
+}
 
 /* --- Navbar --- */
 
@@ -73,13 +78,13 @@ nav {
 }
 
 /* --- Header ---  */
+
 .index__header {
   margin-bottom: 4vh;
   background-image: url('./assets/jacob-rank-pZRYYYijWco-unsplash.jpg');
   /* Image Jacob Rank on Unsplash - URL https://unsplash.com/photos/pZRYYYijWco */
   background-repeat: no-repeat;
   background-position: center;
-  filter: grayscale(75%);
 }
 .index__header h1 {
   font-family: 'Barlow', sans-serif;
