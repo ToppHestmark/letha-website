@@ -22,7 +22,7 @@
   border: 1px solid #e6e6e8;
 }
 
-/* --- Dropdown SORT BY menu ---  */
+/* --- Dropdown menu ---  */
 .products__dropdownButton {
   display: flex;
   justify-content: space-between;
@@ -36,6 +36,7 @@
 .products__dropdownIcon {
   width: 30px;
   height: auto;
+  margin-left: 50px;
 }
 
 .products__dropdownButton:focus {
@@ -120,6 +121,14 @@
   .products__header p {
     padding: 0 10px 10px 10px;
     text-align: center;
+  }
+
+  .page__trackContainer {
+    padding: 3vh 2vw 5vh 2vw;
+ 
+  }
+  .products__dropdownIcon {
+    margin-left: 15px;
   }
 
   .products__product {
