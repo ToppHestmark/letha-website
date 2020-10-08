@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/ira7wdv.css");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 
 * {
   margin: 0;
@@ -23,11 +24,13 @@ main {
 }
 
 /* --- Navbar --- */
+
+.shoppingBagIconMobile {
+  display: none;
+}
 nav {
   display: flex;
   height: 10vh;
-  background: #fff0f0;
-  margin-bottom: 5vh;
 }
 .nav-logo {
   display: flex;
@@ -70,39 +73,30 @@ nav {
 }
 
 /* --- Header ---  */
-.index__headerMobile {
-  display: none;
-}
 .index__header {
   margin-bottom: 4vh;
+  background-image: url('./assets/jacob-rank-pZRYYYijWco-unsplash.jpg');
+  /* Image Jacob Rank on Unsplash - URL https://unsplash.com/photos/pZRYYYijWco */
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(75%);
 }
-
-.index__headerDesktop {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100vw;
-}
-.shoppingBagIconMobile {
-  display: none;
-}
-
-.index__headerImages {
-  width: 30%;
-  max-width: 450px;
-  filter: grayscale(30%);
-}
-.index__headerImages img {
-  width: 100%;
-  height: auto;
-}
-.index__imageText {
-  font-size: 3vw;
-  margin-top: -60px;
-  margin-bottom: 20px;
-  color: aliceblue;
+.index__header h1 {
+  font-family: 'Barlow', sans-serif;
   text-align: center;
-  text-shadow: 1px 0px 1px #000;
+  color: white;
+  font-size: 50px;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  text-align: center;
+  padding: 0 5px 10px 5px;
+  font-size: 22px;
 }
 
 /* --- Lower circeled menus --- */
@@ -111,9 +105,6 @@ nav {
   justify-content: center;
   width: 100vw;
 }
-/* .index__categorys {
-  cursor: pointer;
-} */
 .index__category:hover {
   -webkit-box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 1px 12px 0px rgba(0,0,0,0.75);
@@ -234,32 +225,9 @@ nav {
   }
 
   /* --- Header ---  */
-  .index__header {
-    max-height: 500px;
-  }
-  .index__headerDesktop {
-    display: none;
-  }
-
-  .index__headerMobile {
-    display: flex;
-    flex-direction: column;
-    filter: grayscale(30%);
-  }
-
-  .index__headerMobile img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-
-  .index__imageText {
-    font-size: 40px;
-    margin-top: -60px;
-    margin-bottom: 20px;
-    color: aliceblue;
-    text-align: center;
-    text-shadow: 1px 0px 1px #000;
+  .index__header h1 {
+    height: 60vh;
+    padding: 40px;
   }
 
   /* --- Three circles --- */
