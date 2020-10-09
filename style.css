@@ -101,10 +101,10 @@ nav {
   color: #212121;
   text-decoration: none;
   font-family: pacifico, sans-serif;
-  font-weight: 400;
+  font-weight: 800;
   font-size: 30px;
-  font-style: normal;
 }
+
 .nav-links {
   display: flex;
   justify-content: space-around;
