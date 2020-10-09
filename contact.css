@@ -103,7 +103,9 @@ fieldset {
 
 @media screen and (max-width: 768px) {
 
+
   #contact__form {
     padding: 25px;
+    margin-top: 50px;
   }
 }
