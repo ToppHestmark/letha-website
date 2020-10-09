@@ -77,7 +77,6 @@
 }
 
 /* --- Details container --- */
-
 .details__rightContainer {
   display: flex;
   flex-direction: column;
@@ -132,6 +131,19 @@
   font-size: large;
   cursor: pointer;
 }
+
+.details__color1:hover,
+.details__color2:hover,
+.details__color3:hover,
+.details__addButton:hover,
+.details__dropdownButton:hover {
+  -webkit-box-shadow: 0px 4px 9px -4px rgba(104,109,118,1);
+  -moz-box-shadow: 0px 4px 9px -4px rgba(104,109,118,1);
+  box-shadow: 0px 4px 9px -4px rgba(104,109,118,1);
+  opacity: 0.9;
+}
+
+
 
 /* --- Dropdown shoe size menu ---  */
 .details__dropdownButton {
