@@ -133,7 +133,6 @@ nav {
 }
 
 /* --- Header ---  */
-
 .index__header {
   margin-bottom: 4vh;
   background-image: url('./assets/jacob-rank-pZRYYYijWco-unsplash.jpg');
@@ -186,14 +185,12 @@ h4 {
   width: 100%;
   height: auto;
 }
-
 .index__shoeCategory {
   display: flex;
   justify-content: center;
 }
 
 /* --- Lower section --- */
-
 .lowerSection {
   width: 100%;
 }
@@ -234,6 +231,67 @@ h4 {
 }
 .button__learnMore a:active {
   background-color: black;
+}
+
+/* --- Subscribe form --- */
+.subscribe__formContainer {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.subscribe__form {
+  width: 50%;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.subscribe__form input {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  color: #212121;
+  padding-top: 20px;
+  border: none;
+}
+.subscribe__form label {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #212121;
+}
+.subscribe__form label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #212121;
+  transform: translate(-100%);
+  transition: transform 0.3s ease;
+}
+.content-email {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.subscribe__form input:focus + .email-label .content-email,
+.subscribe__form input:valid + .email-label .content-email {
+  transform: translateY(-100%);
+  color: #212121;
+}
+
+.subscribe__form input:focus + .email-label::after, 
+.subscribe__form input:valid + .email-label::after {
+  transform: translateX(0%);
 }
 
 /* --- Social Media icons --- */
@@ -375,7 +433,8 @@ h4 {
   .main.remove, 
   .footer.remove, 
   .nav-logo.remove,
-  .shoppingBagIconMobile.remove {
+  .shoppingBagIconMobile.remove,
+  .subscribe__formContainer.remove {
     display: none;
   }
   .dropdown-item {
@@ -393,6 +452,13 @@ h4 {
   .index__lowerText p {
     padding: 15px;
     font-size: 20px;
+  }
+
+  .subscribe__formContainer {
+    height: 25vh;
+  }
+  .subscribe__form {
+    width: 90%;
   }
 
   .fa-twitter,
