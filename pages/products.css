@@ -100,7 +100,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   flex: 1 0 30%;
+}
+.products__imageContainer h3 {
+  justify-content: center;
+  background-color: rgba(246, 85, 85, 0.96);
+  color: white;
+  width: 100%;
+  text-align: center;
 }
 .products__imageContainer img {
   width: 70%;
